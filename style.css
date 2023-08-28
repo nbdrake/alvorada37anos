@@ -1,0 +1,120 @@
+/* Estilos globais */
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/logo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos da página */
+
+.container {
+    background-color: rgba(240, 248, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    margin: auto; /* Centraliza horizontalmente */
+    max-width: 400px;
+    width: 100%;
+    transition: all 0.3s ease-out;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: flex-start; /* Alterado para alinhar no canto esquerdo */
+    align-items: flex-start; /* Alterado para alinhar no canto esquerdo */
+    padding: 30px;
+    margin-top: 50px; /* Adicione esta linha para empurrar a wrapper para cima */
+}
+
+.wrapper {
+    /*position: relative;*/
+    overflow: hidden; /* Evita a rolagem desnecessária */
+    min-height: 55vh; /* 100% da altura da viewport */
+    display: flex; /*Centraliza vertical e horizontalmente */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+b {
+    color: #789FD7;
+    font-weight: 650;
+}
+
+p {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 12px 12px 0px 17px;
+    color: #4B7767;
+    text-align: center; /* Adiciona essa linha para centralizar o texto */
+    justify-content: center;
+}
+
+footer {
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #ffffff;
+    box-sizing: border-box;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 650;
+}
+
+a:link, a:visited {
+    color: #789FD7;
+    transition: color 0.3s ease-out; /* Adicionado para suavizar a transição de cor */
+}
+
+a:hover {
+    background-color: #A5C4B5;
+    color: white; /* Altera a cor do texto para branco ao passar o mouse */
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+span {
+    background-color: #4B7767;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    transition: all 0.2s ease-out;
+}
+
+
+
+/* Mídia para dispositivos móveis */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
